@@ -1,0 +1,155 @@
+@font-face {
+    font-family: skirtbold;
+    src: url(SkirtRgBold.ttf);
+}
+*{  font-family: skirtbold;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+div.counteiner{
+    background-color: rgb(179, 180, 180);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div.main{
+    width:80vw ;
+    max-width: 600px;
+    height: 400px;
+    background-color: pink;
+    border-radius: 10px 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.212);
+}
+div.box1{
+    width: 100%;
+    height: 200px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px 10px 0 0px;
+    padding: 25px 30px;
+}
+div.box1 h4{
+    margin: 15px 0 10px 0;
+    color: #BFDF32;
+    margin-bottom: 15px;
+}
+p.texto1, .texto2{
+    color: rgb(141, 141, 141);
+    font-size:0.8em;
+}
+p.texto1{
+    margin-bottom: 10px;
+}
+div.box2{
+    width: 50%;
+    height: 200px;
+    background-color: #2BB3B1;
+    border-radius: 0 0 0 10px;
+    padding: 25px 20px;
+    color: white;
+    
+}
+.box2 span{
+    margin-bottom: 15px;
+}
+
+.preco{
+    font-size: 30px;
+    margin-right: 10px;
+}
+.per_m{
+    font-size: small;
+    color: #bdfffdaf;
+}
+.box2 p{
+    font-size: 14px;
+    margin: 10px 0 10px 0;
+}
+div.box3{
+    width: 50%;
+    height: 200px;
+    background-color: #4ABDBD;;
+    border-radius: 0 0 10px 0;
+    padding: 25px 20px;
+    color: white;
+}
+
+div.box3 p{
+    color:#d4f3f3;
+    margin-top: 10px;
+    font-size: 13px;
+    line-height: 23px;
+}
+div.title_div{
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    align-items: center;
+}
+div.title_div h2{
+    font-size: large;
+    color: #399D9A;
+}
+.botao_counteiner{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    max-width: 180px;
+    height: 40px;
+    margin: auto;
+}
+.botao_counteiner button{
+    width:100% ;
+    background-color: #BFDF32;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.185);
+}
+.botao_counteiner button:hover{
+    background-color:#cbec35;
+}
+@media screen and (max-width: 450px){
+    div.main{
+    background-color: pink;
+    height: 100vh;
+    flex-direction: column;
+    min-width: 200px;
+    max-height: 640px;
+    flex-wrap: nowrap;
+    }
+
+    div.box1{
+    width: 100%;
+    height: 250px;
+    }
+
+    p.texto1, p.texto2{
+        line-height: 200%;
+        margin-bottom: 0px;
+    }
+
+    div.box2{
+    width: 100%;
+    height: 190px;
+    border-radius: 0 0 0 0;
+    }
+
+    div.box3{
+    width: 100%;
+    height: 200px;
+    border-radius: 0 0 10px 10px;
+    }
+
+    div.box3 p{
+    color:#d4f3f3;
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 30px;
+}
+}
